@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="test website">
+    <meta name="keywords" content="heading, image, paragraph">
+    <meta name="author" content="sara altayeh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the nature page</title>
+    <base href="file:///C:/Users/User/Desktop/index.html#home" target="_blank">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        div {
+            opacity: 90%;
+            display: flex;
+            display: -webkit-flex;
+        }
+        
+        .div1 {
+            background: #035EE6;
+            display: flex;
+            flex-direction: column;
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            color: white;
+            width: 70%;
+        }
+        
+        h1 {
+            font-size: medium;
+            font-weight: normal;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin-bottom: 26px;
+        }
+        
+        .opacity {
+            opacity: 0.7;
+        }
+        
+        form {
+            opacity: 1;
+            border-radius: 35px;
+            width: 300px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .div2 {
+            display: flex;
+            flex-direction: column;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background-color: white;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 100%;
+        }
+        
+        .top-right {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            font-weight: lighter;
+            font-size: small;
+        }
+        
+        .img-background {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/564x/ba/8b/4b/ba8b4b850dba8902f2c2d74c58d83fde.jpg");
+        }
+        
+        .centered {
+            position: absolute;
+            bottom: 30px;
+            left: 60px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: small;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+        
+        .email {
+            width: 200px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #176AE6;
+            border-radius: 35px;
+            min-height: 40px;
+            margin-bottom: 5px;
+        }
+        
+        .password {
+            width: 200px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #176AE6;
+            border-radius: 35px;
+            min-height: 40px;
+        }
+        
+        .sign-in {
+            border: 2px solid white;
+            border-radius: 35px;
+            min-height: 40px;
+            width: 135px;
+            margin-top: 15px;
+        }
+        
+        .login {
+            width: 200px;
+            height: 40px;
+            border-radius: 35px;
+            min-height: 40px;
+        }
+        
+        .logo {
+            margin-top: 50px;
+        }
+        
+        h3 {
+            font-weight: bold;
+            font-size: 30px;
+            opacity: unset;
+        }
+    </style>
+
+    <body class="p-5">
+        <div class="container p-0 shadow-lg">
+            <section class="div1 d-none d-md-block">
+                <div class="container p-0">
+                    <img class="opacity" src="https://i.pinimg.com/564x/ba/8b/4b/ba8b4b850dba8902f2c2d74c58d83fde.jpg" alt="natural" width="100%" height="100%" />
+                    <div>
+                        <h2 class="top-right">LOGIN</h2>
+                        <div class="centered">
+                            <h3>WELCOME TO ELKA</h3>
+
+                            <p style="margin-top: 15px;">Join our community that have more than 10000<br> subscribers and learn new things everyday</p>
+                            <button type="button" class="btn btn-primary sign-in">SIGN IN</button></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="div2 d-flex flex-column justify-content-between">
+                <img src="https://www.humanrightslogo.net/sites/default/files/HRLogoCMYKsmallRGB.png" alt="logo" width="100px" height="100px" class="logo" />
+
+                <form>
+                    <h1>BE ONE OF US!</h1>
+                    <input type="email" id="email" name="email" placeholder="sara1@gmail.com" size="25" class="email px-2 mt-2">
+                    <input type="password" id="pwd" name="pwd" value="password" size="25" placeholder="password" class="password  px-2 mt-2 ">
+                    <button type="button" class="btn btn-primary mt-4 login">LOGIN</button>
+                </form>
+                <p>Don't have account? <b>Sign up</b> </p>
+            </div>
+
+        </div>
+    </body>
+</head>
+
+</html>
